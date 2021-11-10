@@ -1,1 +1,2 @@
+# keeps the .idea/ folder local so it doesn't upload to the remote repo server
 .idea/
