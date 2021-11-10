@@ -1,3 +1,4 @@
+# https://www.youtube.com/channel/UCR-zOCvDCayyYy1flR5qaAg
 import discord
 import random
 from discord.ext import commands
@@ -122,5 +123,5 @@ for filename in os.listdir('./cogs'):
         client.load_extension(f'cogs.{filename[:-3]}')
 """
 
-client.run('NzU4MDY1Nzg5MjIzMDQzMTYz.X2phyA.zNovKt1ultjbj5NoK8D_60uuIaI')
-# hi
+client.run('NzU4MDY1Nzg5MjIzMDQzMTYz.X2phyA.AF1pXK_MDgvNMswz2FzEJXJXMgw')
+
