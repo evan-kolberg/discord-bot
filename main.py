@@ -109,6 +109,6 @@ async def unban(ctx, *, member):
             await ctx.guild.unban(user)
             return
 
-
-client.run('NzU4MDY1Nzg5MjIzMDQzMTYz.X2phyA.m3bcODZZVHVD7TxeA4dbmw8pH1E')
+token = input("What is the bot token?: ")
+client.run(token)
 
