@@ -122,5 +122,5 @@ for filename in os.listdir('./cogs'):
         client.load_extension(f'cogs.{filename[:-3]}')
 """
 
-client.run('NzU4MDY1Nzg5MjIzMDQzMTYz.X2phyA.eYqLGOXV6sI7djq9uQj3aeb667I')
+client.run('NzU4MDY1Nzg5MjIzMDQzMTYz.X2phyA.zNovKt1ultjbj5NoK8D_60uuIaI')
 # hi
