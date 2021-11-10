@@ -110,18 +110,5 @@ async def unban(ctx, *, member):
             return
 
 
-"""
-@client.command()
-async def load(ctx, extension):
-    client.load_extension(f'cogs.{extension}')
-@client.command()
-async def unload(ctx, extension):
-    client.unload_extension(f'cogs.{extension}')
-
-for filename in os.listdir('./cogs'):
-    if filename.endswith('.py'):
-        client.load_extension(f'cogs.{filename[:-3]}')
-"""
-
 client.run('NzU4MDY1Nzg5MjIzMDQzMTYz.X2phyA.m3bcODZZVHVD7TxeA4dbmw8pH1E')
 
