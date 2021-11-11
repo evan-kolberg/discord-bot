@@ -1,3 +1,6 @@
+'''
+This program operates a Discord Python bot that users can interact with within a server
+'''
 import discord
 import random
 from discord.ext import commands
