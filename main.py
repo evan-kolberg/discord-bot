@@ -108,60 +108,7 @@ async def unban(ctx, *, member):
 token = input("What is the bot token?: ")
 # Runs the client with the token
 client.run(token)
-def coolProject():
-    """
-    This will make a pumkin
-    that changes colors for
-    the rest of eternity
-    """
-
-    # Imports the random library
-    import random
-
-    # Sets colors and the size based on user input
-    color1 = input("What do you want the first color to be?: ")
-    color2 = input("What do you want the second color to be?: ")
-    color3 = input("What do you want the third color to be?: ")
-    color4 = input("What do you want the forth color to be?: ")
-    color5 = input("What do you want the fifth color to be?: ")
-    stemColor1 = input("What do you want the first stem color to be?: ")
-    stemColor2 = input("What do you want the second stem color to be?: ")
-    size = int(input("What do you want the size to be?: "))
-    stemSize = int(input("What do you want the stem size to be?: "))
-    colors = [color1, color2, color3, color4, color5]
-    stemColors = [stemColor1, stemColor2]
-
-    # Sets up the turtle
-    shape("arrow")  # hehe
-    penup()
-    setposition(0, size)
-    left(180)
-    pendown()
-
-    # Defines the function to create half of a circle
-    speed(10)
-
-    def circleHalf():
-        colorchoice = random.choice(colors)
-        color(colorchoice)
-        circle(size, 180, 6)
-
-    # Defines the function to create a stem
-    def stem():
-        colorchoice = random.choice(stemColors)
-        color(colorchoice)
-        right(90)
-        forward(stemSize)
-        right(180)
-        forward(stemSize)
-        right(90)
-
-    # Starts creating the pumkin, then changing colors for the rest of eternity
-    while True:
-        for x in range(2):
-            begin_fill()
-            circleHalf()
-            end_fill()
-        stem()
-
-coolProject()
+import turtle
+while True:
+    turtle.forward(100)
+    turtle.backward(100)
