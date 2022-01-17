@@ -118,6 +118,12 @@ async def unban(ctx, *, member):
         if (user.name, user.discriminator) == (member_name, member_discriminator):
             await ctx.guild.unban(user)
             return
+@unban.error
+aasync def unban_error(ctx, erorr)
+    await ctx.send(
+        "Either you do not have permission to run this command, your syntax was invalid, or there was an error.")
+
+
 
 
 # Asks the user for a token for the bot to run
