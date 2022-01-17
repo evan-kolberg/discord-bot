@@ -119,7 +119,7 @@ async def unban(ctx, *, member):
             await ctx.guild.unban(user)
             return
 @unban.error
-async def unban_error(ctx, erorr)
+async def unban_error(ctx, erorr):
     await ctx.send(
         "Either you do not have permission to run this command, your syntax was invalid, or there was an error.")
 
