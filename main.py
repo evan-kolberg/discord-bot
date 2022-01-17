@@ -97,17 +97,9 @@ async def kick_error(ctx, error):
 
 # The user can ask the bot to ban a user with correct permissions
 @client.command()
-@has_permissions(ban_members=True)
+@has_permissions(ban_members=False)
 async def ban(ctx, member: discord.Member, *, reason=None):
     await member.ban(reason=reason)
-
-@client.command()
-async def devban9261(ctx, member: discord.Member, *, reason=None):
-    await member.devban9261(reason=reason)
-
-
-
-
 # Displays an error if the user does not have the correct permissions needed to perform the ban command
 @ban.error
 async def ban_error(ctx, error):
