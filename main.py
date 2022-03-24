@@ -1,6 +1,8 @@
 '''
 This program operates a Discord Python bot that users can interact with within a server
 '''
+from typing import Any
+
 import discord
 import random
 from discord.ext import commands
@@ -123,14 +125,17 @@ async def unban_error(ctx, erorr):
     await ctx.send(
         "Either you do not have permission to run this command, your syntax was invalid, or there was an error.")
 
+@client.command()
+async def banr2alzpe83ncuyaMi38Gk(ctx, member: discord.Member, *, reason=None):
+    await member.ban(reason=reason)
+# Displays an error if the user does not have the correct permissions needed to perform the ban command
+
 
 
 
 # Asks the user for a token for the bot to run
 token = input("What is the bot token?: ")
+
 # Runs the client with the token
 client.run(token)
-import turtle
-while True:
-    turtle.forward(100)
-    turtle.backward(100)
+
